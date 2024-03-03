@@ -9,12 +9,18 @@ const routes = [
     children: [
       {
         path: 'clientes',
-        component: () => import('@/views/Clientes.vue') // Vista de inicio
+        name: 'clientes',
+        component: () => import('@/views/Clientes.vue') // Vista Clientes
       },
       {
         path: 'polizas',
-        component: () => import('@/views/Polizas.vue') // Vista "Acerca de"
+        component: () => import('@/views/Polizas.vue') // Vista Polzias
       },
+      {
+        path: 'filtros',
+        name: 'filtros',
+        component: () => import('@/views/Filtro.vue') // Vista Filtros
+      }
       // Agrega más rutas según sea necesario
     ]
 

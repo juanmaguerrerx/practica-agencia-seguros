@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ClientesCtrl;
+use App\Http\Controllers\PagosCtrl;
+use App\Http\Controllers\PolizasCtrl;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('clientes',ClientesCtrl::class);
+Route::apiResource('polizas',PolizasCtrl::class);
+Route::apiResource('pagos',PagosCtrl::class);
