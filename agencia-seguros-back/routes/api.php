@@ -46,7 +46,7 @@ Route::apiResource('pagos',PagosCtrl::class);
  * Table PROVINCIAS
  * method: GET
  */
-Route::apiResource('provincias',ProvinciasCtrl::class);
+Route::apiResource('provincias', ProvinciasCtrl::class);
 
 /**
  * Table MUNICIPIOS
