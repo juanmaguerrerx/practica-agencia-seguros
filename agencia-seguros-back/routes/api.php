@@ -50,6 +50,6 @@ Route::apiResource('provincias', ProvinciasCtrl::class);
 
 /**
  * Table MUNICIPIOS
- * method:
+ * method: POST
  */
 Route::apiResource('municipios',MunicipiosCtrl::class);
